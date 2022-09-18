@@ -1,0 +1,21 @@
+CREATE TABLE Elixir (ID INTEGER PRIMARY KEY, name text, Moisture text, cost integer, starrating integer);
+INSERT INTO Elixir VALUES (1, "LIX Moisturizer", "High", 45, 5);
+INSERT INTO Elixir VALUES (2, "BIOM Serum", "Medium", 55, 4);
+INSERT INTO Elixir VALUES (3, "Seal Eye Cream", "High", 70, 5);
+INSERT INTO Elixir VALUES (4, "Exo Toner","Low", 50, 3);
+INSERT INTO Elixir VALUES (5, "Pure Balm", "High", 40, 5);
+INSERT INTO Elixir VALUES (6, "ExperiMint face mask", "Medium", 60, 4);
+INSERT INTO Elixir VALUES (7, "Pout lip mask", "High", 25, 5);
+INSERT INTO Elixir VALUES (8, "Lash Extender Serum", "Medium", 40, 2);
+INSERT INTO Elixir VALUES (9, "Golden SPF", "Low", 55, 4);
+INSERT INTO Elixir VALUES (10, "Rewind Essense", "High", 75, 5);
+INSERT INTO Elixir VALUES (11, "Sheen Gloss", "Medium", 25, 4);
+INSERT INTO Elixir VALUES (12, "Skindation", "Low", 50, 3);
+INSERT INTO Elixir VALUES (13, "Lush Blush", "Medium", 30, 5);
+INSERT INTO Elixir VALUES (14, "Flow Eyeshadowpalette", "Low", 60, 4);
+INSERT INTO Elixir VALUES (15, "FIN nail polish", "Low", 20, 5);
+SELECT * FROM Elixir;
+SELECT SUM(cost) FROM Elixir;
+SELECT*FROM Elixir WHERE starrating<5 ORDER BY starrating;
+SELECT MAX(cost) FROM Elixir;
+
